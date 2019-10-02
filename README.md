@@ -2,7 +2,7 @@
 
 Integrantes:
 -Matías Guzmán 201673588-7
--Victoria Miranda 2016numeronoinformatico2algo-k
+-Victoria Miranda 201604521-k
 
 Tarea 1 de Sistemas de gestion, arquitectura cliente servidor usando dockers y arquitectura tipo hadoop con 3 nodos
 
