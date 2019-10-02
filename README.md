@@ -8,7 +8,7 @@ Tarea 1 de Sistemas Distribuidos, arquitectura cliente servidor usando dockers y
 
 Para ejecutar esta aplicación se requiere docker y se necesitan usar los comandos docker-compose build para la construcción de los containers y docker-compose up para el levantamiento automático de estos. Al finalizar la ejecución, usar el comando docker-compose down para liberar la red estática que se definió con tal de no causar problemas.
 
-Se debe tener en consideración que usamos una red estática para la conexión entre las partes, por lo que en caso de que se tengan otros servicios levantados podria haber colisión.
+Se debe tener en consideración que usamos una red estática para la conexión entre las partes, por lo que en caso de que se tengan otros servicios levantados podria haber colisión.(en caso de que ocurra debido a un docker anteriormente usado, el comando docker network prune puede resolverla)
 
 La ruta de los archivos "log" para cliente-servidor son:
 * Cliente-Servidor/cliente/respuestas/respuestas.txt Para las respuestas recibidas por el cliente
