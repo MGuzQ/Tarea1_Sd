@@ -1,0 +1,1 @@
+Txt que mantiene la carpeta de logs en git
