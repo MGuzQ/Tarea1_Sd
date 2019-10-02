@@ -20,4 +20,8 @@ La ruta de los archivos "log" para la arquitectura hadoop son:
 * Hadoop/datanode2/logs/data.txt    Indica los mensajes que recibio del cliente(por el headnode)
 * Hadoop/datanode3/logs/data.txt    Indica los mensajes que recibio del cliente(por el headnode)
 * Hadoop/headnode/logs/hearbeat_server.txt  Indica cada 5s que headnodes estan en ejecucion
+<<<<<<< HEAD
 * Hadoop/headnode/logs/registro_server.txt  Indica que datanode tiene los mensajes del cliente
+=======
+* Hadoop/headnode/logs/registro_server.txt  Indica que datanode tiene los mensajes del cliente
+>>>>>>> 05728c7a1fe6aa29f045e33060dbe33bf679e9b3
