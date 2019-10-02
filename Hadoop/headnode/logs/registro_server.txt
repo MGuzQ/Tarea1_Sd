@@ -1,9 +1,0 @@
-datanode 2 tiene el mensaje: Mensaje 1
-datanode 1 tiene el mensaje: Mensaje 2
-datanode 3 tiene el mensaje: Mensaje 3
-datanode 3 tiene el mensaje: Mensaje 4
-datanode 3 tiene el mensaje: Mensaje 5
-datanode 1 tiene el mensaje: Mensaje 6
-datanode 1 tiene el mensaje: Mensaje 7
-datanode 1 tiene el mensaje: Mensaje 8
-datanode 3 tiene el mensaje: Mensaje 9
