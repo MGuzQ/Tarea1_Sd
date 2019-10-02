@@ -1,0 +1,31 @@
+version: '3'
+services:
+  servidor:
+    build: servidor/
+
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./servidor/logs:/logs
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.5
+
+  cliente:
+    build: cliente/
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./cliente/respuestas:/respuestas
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.6
+    depends_on:
+      - "servidor"
+
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16

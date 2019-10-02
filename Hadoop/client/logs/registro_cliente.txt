@@ -1,0 +1,10 @@
+Mensaje Mensaje 1 guardado en datanode 2
+Mensaje Mensaje 2 guardado en datanode 1
+Mensaje Mensaje 3 guardado en datanode 3
+Mensaje Mensaje 4 guardado en datanode 3
+Mensaje Mensaje 5 guardado en datanode 3
+Mensaje Mensaje 6 guardado en datanode 1
+Mensaje Mensaje 7 guardado en datanode 1
+Mensaje Mensaje 8 guardado en datanode 1
+Mensaje Mensaje 9 guardado en datanode 3
+Fin 

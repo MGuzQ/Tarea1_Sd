@@ -1,0 +1,78 @@
+version: '3'
+services:
+  head:
+    build: headnode/
+    
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./headnode/logs:/logs
+
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.2
+
+  clientito:
+    build: client/
+    
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./client/logs:/logs
+    depends_on:
+      - "head"
+      - "data1"
+      - "data2"
+      - "data3"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.3
+
+  data1:
+    build: datanode1/
+    
+    ports:
+      - "5002:5001"
+      - "5005:5002"
+    volumes:
+      - ./datanode1/logs:/logs
+    depends_on:
+      - "head"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.4
+
+  data2:
+    build: datanode2/
+    
+    ports:
+      - "5003:5001"
+      - "5006:5003"
+    volumes:
+      - ./datanode2/logs:/logs
+    depends_on:
+      - "head"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.5
+
+  data3:
+    build: datanode3/
+    
+    ports:
+      - "5004:5001"
+      - "5007:5004"
+    volumes:
+      - ./datanode3/logs:/logs
+    depends_on:
+      - "head"
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.6
+
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
